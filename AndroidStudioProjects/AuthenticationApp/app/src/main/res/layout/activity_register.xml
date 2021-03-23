@@ -47,7 +47,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-
+        android:id="@+id/nfullname"
         android:layout_width="293dp"
         android:layout_height="49dp"
         android:layout_marginStart="16dp"
@@ -65,7 +65,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nemail"
         android:layout_width="293dp"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -79,11 +79,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="303dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="303dp" />
 
     <EditText
-        android:id="@+id/passwd"
+        android:id="@+id/npasswd"
         android:layout_width="291dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
@@ -102,7 +102,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/rpasswd"
+        android:id="@+id/nconpasswd"
         android:layout_width="292dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -121,7 +121,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nRegBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
@@ -136,7 +136,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/nLoginr"
         android:layout_width="277dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -168,8 +168,19 @@
         android:text="@string/rbtn"
         android:textColor="@color/Beige"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="507dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <ProgressBar
+        android:id="@+id/proBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>
