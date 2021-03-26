@@ -1,13 +1,21 @@
 package gcit.edu.bt.authenticationapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
@@ -30,7 +38,48 @@ public class Register extends AppCompatActivity {
         nRegistrationBtn = findViewById(R.id.nRegBtn);
         nLoginbtn = findViewById(R.id.nLoginr);
         fAuth = FirebaseAuth.getInstance();
-        ProgressBar = findViewById(R.id.proBar);
+        nProgressBar = findViewById(R.id.proBar);
+
+        //if the user have  already registered and logined then user can directly jump to the home page.
+        if(fAuth.getCurrentUser()!=null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
+
+        nRegistrationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = nEmail.getText().toString().trim();
+                String password = nPassword.getText().toString().trim();
+                if(TextUtils.isEmpty(email)){
+                    nEmail.setError("Email is required");
+                    return;
+                }
+                if(TextUtils.isEmpty(password)){
+                    nPassword.setError("Your password is empty");
+                    return;
+                }
+                if(password.length() < 8){
+                    nPassword.setError("you password should be of 8 character or more");
+                    return;
+                }
+                nProgressBar.setVisibility(View.VISIBLE);
+                fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(Register.this,"User Created.", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        }else{
+                            Toast.makeText(Register.this, "Error!!"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+
+                        }
+                    }
+                });
+
+            }
+
+        });
 
     }
 }

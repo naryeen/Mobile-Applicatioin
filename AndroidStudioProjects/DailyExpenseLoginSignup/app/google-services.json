@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "653621672451",
+    "project_id": "focused-pipe-302113",
+    "storage_bucket": "focused-pipe-302113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653621672451:android:77e96b7563e9ce1c066c36",
+        "android_client_info": {
+          "package_name": "edu.bt.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653621672451-fdebc6rk554ogs4pp7lhah0bi34qptjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfJ2t9DHSwD7hxlgl26C70Q2oJZ-rfZ7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653621672451-fdebc6rk554ogs4pp7lhah0bi34qptjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
