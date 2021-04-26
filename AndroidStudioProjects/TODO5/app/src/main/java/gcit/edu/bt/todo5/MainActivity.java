@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     // EditText view for the message
     private EditText mMessageEditText;
     // TextView for the reply header
-    private TextView mReplyHeadTextView;
+    private TextView mReplyHeadTextView;   
     // TextView for the reply body
     private TextView mReplyTextView;
 

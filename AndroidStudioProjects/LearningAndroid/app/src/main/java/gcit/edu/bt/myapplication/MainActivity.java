@@ -19,8 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         txtCounter =findViewById(R.id.txt_counter);
         btnCount=findViewById(R.id.btn_count);
-        btnReset = findViewById(btn_reset);
+        btnReset = findViewById(R.id.btn_reset);
         btnToast=findViewById(R.id.btn_toast);
+
         btnToast.setOnClickListener(this);
         btnCount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v)
                 {
                 txtCounter.setText("0");
+
                 }
             });
     }

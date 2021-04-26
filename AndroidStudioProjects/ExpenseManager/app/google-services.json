@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "236149441986",
+    "project_id": "expensemanager-a30c9",
+    "storage_bucket": "expensemanager-a30c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236149441986:android:f9708a90d942d59669025b",
+        "android_client_info": {
+          "package_name": "edu.bt.expensemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236149441986-qgei2kfbsdbcak6gchapcp9o7bbrhhi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDInL0ZOik7EFIXVfkrqmpCeIbK555jMmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236149441986-qgei2kfbsdbcak6gchapcp9o7bbrhhi6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

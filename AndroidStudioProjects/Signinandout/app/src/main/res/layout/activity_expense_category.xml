@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".expenseCategory">
+
+    <EditText
+        android:id="@+id/expenseEdit"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+
+        />
+
+    <EditText
+        android:id="@+id/expenseCal"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/expenseEdit"
+        android:layout_marginBottom="-175dp"
+        android:onClick="calcu"
+        android:drawableRight="@drawable/ic_baseline_calculate_24" />
+
+
+</RelativeLayout>

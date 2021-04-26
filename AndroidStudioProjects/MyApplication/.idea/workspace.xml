@@ -5,20 +5,46 @@
       <config />
     </shared>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aed487a4-7806-493d-955d-44d31422bd6a" name="Default Changelist" comment="" />
+    <list default="true" id="aed487a4-7806-493d-955d-44d31422bd6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/dictionaries/nar_bdr_kharka.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoginSignup2/app/src/main/res/drawable/register.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyclassActivity/.idea/MyclassActivity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/register.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_email_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TODO72/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[8DNFDYW45DEQUS59]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1pqCzY5zjLR2Tg6UO3ilpkXLa2Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyclassActivity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DailyExpenseLoginSignup" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-528689244">
@@ -37,9 +63,7 @@
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="My_Application.app" />
@@ -94,9 +118,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -112,14 +134,30 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="728" y="301" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615901698255">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="728" y="301" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1615901698255" />
-    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1615901951826">
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1618822715011">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1615901951826" />
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1618822715011" />
+    <state x="659" y="259" key="search.everywhere.popup" timestamp="1618753888252">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="259" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1618753888252" />
   </component>
 </project>

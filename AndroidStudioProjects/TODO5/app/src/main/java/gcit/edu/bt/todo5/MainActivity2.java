@@ -15,7 +15,6 @@ public class MainActivity2 extends AppCompatActivity {
     // Unique tag for the intent reply.
     public static final String EXTRA_REPLY =
             "gcit.edu.bt.todo5.extra.REPLY";
-
     // EditText for the reply.
     private EditText mReply;
 
