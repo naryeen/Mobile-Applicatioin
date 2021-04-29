@@ -12,7 +12,7 @@ import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
     private EditText editTextView1;
-    private EditText editTextView2;
+    private EditText editTextView2; 
     private TextView editTextView3;
     public Ccalculator ccalculator;
     Ccalculator ress=new Ccalculator();
