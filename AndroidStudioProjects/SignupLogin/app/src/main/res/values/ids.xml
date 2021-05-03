@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="textView4" type="id">uEmail</item>
-    <item name="textView5" type="id">uPassword</item>
-    <item name="textView6" type="id">uLogin</item>
-    <item name="btn6" type="id">button</item>
-</resources>

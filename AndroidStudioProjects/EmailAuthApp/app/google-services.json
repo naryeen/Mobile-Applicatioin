@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "793665396482",
+    "project_id": "quizapp-310f5",
+    "storage_bucket": "quizapp-310f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793665396482:android:be988e1fe82ad345b92c1b",
+        "android_client_info": {
+          "package_name": "edu.bt.emailauthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793665396482-hiljt8l0hjirjgfghac88aaompnsd028.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEXcuws68_nqC-mjqUOVpi3q0jk7FlYyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793665396482-hiljt8l0hjirjgfghac88aaompnsd028.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
