@@ -7,6 +7,16 @@
     android:background="@color/Beige"
     tools:context=".MainActivity">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="108dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|end"
+
+        android:src="@drawable/ic_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewfroyo" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -14,12 +24,12 @@
         android:layout_height="145dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-
         android:layout_marginTop="92dp"
         android:onClick="clickDonut"
         android:src="@drawable/donut"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:contentDescription="TODO12" />
 
     <ImageView
         android:layout_width="134dp"

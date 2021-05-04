@@ -1,11 +1,16 @@
   package edu.bt.emailauthapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -20,7 +25,7 @@ public class Register extends AppCompatActivity {
     EditText registerPassword;
     EditText confirm_Password;
     Button btnRegister;
-    Button btnloginfromregis;
+    Button goToLogin;
     FirebaseAuth fAuth;
 
     @Override
@@ -32,10 +37,16 @@ public class Register extends AppCompatActivity {
         registerPassword = findViewById(R.id.registerpassword);
         confirm_Password = findViewById(R.id.confirm_Password);
         btnRegister = findViewById(R.id.btnregister);
-        btnloginfromregis = findViewById(R.id.btnloginfromregis);
+        goToLogin = findViewById(R.id.goToLogin);
 
         fAuth = FirebaseAuth.getInstance();
-
+        goToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                finish();
+            }
+        });
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +80,19 @@ public class Register extends AppCompatActivity {
                 Toast.makeText(Register.this, "data is validated", Toast.LENGTH_SHORT).show();
 
 
-                fAuth.createUserWithEmailAndPassword(email,password).addSu;
+                fAuth.createUserWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        //Sending the user to the Dashboard or home
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        finish();  ///once user finished doing login user cannot come to register field again
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(Register.this,e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
 
             }
         });

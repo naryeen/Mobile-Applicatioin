@@ -17,4 +17,13 @@
     <string name="password">Password</string>
     <string name="create_account">Create Account</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="logout">Logout</string>
+    <string name="please_verify_your_email_address">Please Verify your Email Address</string>
+    <string name="verify_now_btn">Verify now</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="save_reset_password">Save</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="email_address_reset">Enter Email Address</string>
 </resources>
