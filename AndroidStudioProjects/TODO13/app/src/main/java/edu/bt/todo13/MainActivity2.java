@@ -16,7 +16,6 @@ public class MainActivity2 extends AppCompatActivity  implements AdapterView.OnI
     public static final String EXTRA_MESSAGE ="edu.bt.todo13.extra.MESSAGE";
 
     // The order message, displayed in the Toast and sent to the new Activity.
-    private String mOrderMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,13 +52,6 @@ public class MainActivity2 extends AppCompatActivity  implements AdapterView.OnI
             spinner.setAdapter(adapter);
         }
     }
-
-    /**
-     * Checks which radio button was clicked and displays a toast message to
-     * show the choice.
-     *
-     * @param view The radio button view.
-     */
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -67,33 +59,23 @@ public class MainActivity2 extends AppCompatActivity  implements AdapterView.OnI
         switch (view.getId()) {
             case R.id.sameday:
                 if (checked)
-                    // Same day service
                     displayToast(getString(
                             R.string.same_day_messenger_service));
                 break;
             case R.id.nextday:
                 if (checked)
-                    // Next day delivery
                     displayToast(getString(
                             R.string.next_day_ground_delivery));
                 break;
             case R.id.pickup:
                 if (checked)
-                    // Pick up
                     displayToast(getString(
                             R.string.pick_up));
                 break;
             default:
-                // Do nothing.
                 break;
         }
     }
-
-    /**
-     * Displays the actual message in a toast message.
-     *
-     * @param message Message to display.
-     */
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message,
                 Toast.LENGTH_SHORT).show();

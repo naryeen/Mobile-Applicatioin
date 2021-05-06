@@ -26,4 +26,9 @@
     <string name="save_reset_password">Save</string>
     <string name="dashboard">Dashboard</string>
     <string name="email_address_reset">Enter Email Address</string>
+    <string name="update_email">Update Email</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="register">Register</string>
+    <string name="if_you_ve_account_login">If you\'ve account,Login</string>
+    <string name="graph">Graph</string>
 </resources>

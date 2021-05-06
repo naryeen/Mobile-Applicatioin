@@ -1,116 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="edu.bt.todo13.MainActivity">
-<!--    tools:showIn="@layout/activity_main">-->
-    <TextView
-        android:id="@+id/textintro"
-        android:layout_width="wrap_content"
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/intro_text"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:theme="@style/Theme.TODO13.AppBaOverlay">
 
-    <ImageView
-        android:id="@+id/donut"
-        android:layout_width="153dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/donuts"
-        android:onClick="showDonutOrder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textintro"
-        app:srcCompat="@drawable/donut" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            >
 
-    <ImageView
-        android:id="@+id/ice_cream"
-        android:layout_width="157dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="12dp"
-        android:contentDescription="@string/ice_cream_sandwiches"
-        android:onClick="showIceCreamOrder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/donut"
-        app:srcCompat="@drawable/icecream" />
+        </androidx.appcompat.widget.Toolbar>
+<!--            app:PopupTheme="@style/Theme.TODO13.PopupOverlay" />-->
 
-    <ImageView
-        android:id="@+id/froyo"
-        android:layout_width="160dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/froyo"
-        android:onClick="showFroyoOrder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ice_cream"
-        app:srcCompat="@drawable/froyo" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:id="@+id/donut_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/donuts"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/donut"
-        app:layout_constraintTop_toTopOf="@+id/donut" />
-
-    <TextView
-        android:id="@+id/ice_cream_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/ice_cream_sandwiches"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ice_cream"
-        app:layout_constraintTop_toTopOf="@+id/ice_cream" />
-
-    <TextView
-        android:id="@+id/froyo_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/froyo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/froyo"
-        app:layout_constraintTop_toTopOf="@+id/froyo" />
+    <include layout="@layout/contain_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
-        android:layout_width="96dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="285dp"
-        android:layout_marginLeft="285dp"
-        android:layout_marginTop="273dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="@string/shopping_cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/froyo_description"
-        app:src="@drawable/ic_shopping"
-        android:visibility="visible"
-        />
+        app:layout_constraintVertical_bias="0.885"
+        app:src="@drawable/ic_shopping" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

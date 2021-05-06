@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
@@ -29,6 +30,7 @@ public class Login extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     AlertDialog.Builder reset_alert;
     LayoutInflater inflater;
+    ProgressBar progressLogin;
 
 
     @Override
@@ -36,6 +38,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         createAccount = findViewById(R.id.btn_createAccount);
+        progressLogin = findViewById(R.id.progressLogin);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -116,6 +119,7 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this,e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+//                progressLogin.setVisibility(View.VISIBLE);
             }
         });
 
