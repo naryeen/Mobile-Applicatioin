@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmailAuthApp">
-        <activity android:name=".Chart_Graph"></activity>
+        <activity android:name=".ExpenseDetails"></activity>
+        <activity android:name=".Chart_Graph" />
         <activity android:name=".ResetPassword" />
         <activity
             android:name=".Register"

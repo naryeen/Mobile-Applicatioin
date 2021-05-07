@@ -50,12 +50,6 @@ public class MainActivity2 extends AppCompatActivity {
                 break;
         }
     }
-
-    /**
-     * Displays the actual message in a toast message.
-     *
-     * @param message Message to display.
-     */
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message,
                 Toast.LENGTH_SHORT).show();

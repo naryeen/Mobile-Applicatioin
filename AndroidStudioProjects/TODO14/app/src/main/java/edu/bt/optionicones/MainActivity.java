@@ -1,18 +1,22 @@
 package edu.bt.optionicones;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
 
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.DatePicker;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,12 +44,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Inflates the menu, and adds items to the action bar if it is present.
-     *
-     * @param menu Menu to inflate.
-     * @return Returns true if the menu inflated.
-     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -53,12 +51,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    /**
-     * Handles app bar item clicks.
-     *
-     * @param item Item clicked.
-     * @return True if one of the defined items was clicked.
-     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -110,12 +102,43 @@ public class MainActivity extends AppCompatActivity {
         displayToast(mOrderMessage);
     }
 
-    /**
-     * Shows a message that the froyo image was clicked.
-     */
+
+    // Shows a message that the froyo image was clicked.
+
     public void showFroyoOrder(View view) {
         mOrderMessage = getString(R.string.froyo_order_message);
         displayToast(mOrderMessage);
     }
 
+    public void btn_alert(View view) {
+        AlertDialog.Builder myBuilder = new AlertDialog.Builder(MainActivity.this);
+        myBuilder.setTitle("Alert");
+        myBuilder.setMessage("Click okay to continue the operation");
+
+        myBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(MainActivity.this, "Click Okay", Toast.LENGTH_SHORT).show();
+            }
+        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(MainActivity.this, "click cancel", Toast.LENGTH_SHORT).show();
+            }
+        });
+        myBuilder.show();
+    }
+
+    public void showDatePicker(View view) {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "datepicker");
+    }
+
+    public void processDatePickerResult(int year, int month, int day) {
+        String str_month = Integer.toString(month + 1);
+        String str_day = Integer.toString(day);
+        String str_year = Integer.toString(year);
+        String str_message = (str_month + "/" + str_day + "/" + str_year);
+        Toast.makeText(this, "Date: " + str_message, Toast.LENGTH_SHORT).show();
+    }
 }

@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
     AlertDialog.Builder reset_alert;
     LayoutInflater inflater;
+    Button btn_expense_details;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         btn_verifyEmail = findViewById(R.id.btn_verifyEmail);
         reset_password = findViewById(R.id.reset_password);
         btn_graph = findViewById(R.id.btn_graph);
+        btn_expense_details = findViewById(R.id.btn_expense_details);
+        btn_expense_details.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),ExpenseDetails.class));
+            }
+        });
 
         btn_graph.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,6 +154,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }
