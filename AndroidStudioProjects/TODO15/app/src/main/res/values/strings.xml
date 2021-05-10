@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TODO15</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="first">TOP Stories</string>
+    <string name="second">Tech news</string>
+    <string name="third">Coder</string>
+    <string name="tab1">These are the top stories</string>
+    <string name="tab2">Hello tech news</string>
+    <string name="tab3">Cooking tips</string>
+
+
+
+</resources>

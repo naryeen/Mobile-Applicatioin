@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".ExpenseDetails">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp"
         android:orientation="vertical">
 
 
@@ -18,21 +21,24 @@
             android:id="@+id/editTextTitle"
             android:layout_width="match_parent"
             android:layout_height="88dp"
-            android:hint="Title"
-            android:inputType="text" />
+            android:autofillHints="title"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextDescription"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:hint="Description"
-            android:inputType="text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:onClick="saveNote"
-            android:text="Save" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="@string/description"
+        android:inputType="textImeMultiLine" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:onClick="saveNote"
+        android:text="@string/save" />
+
+</LinearLayout>

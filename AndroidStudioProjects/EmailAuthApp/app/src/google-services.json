@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "793665396482",
-    "project_id": "quizapp-310f5",
-    "storage_bucket": "quizapp-310f5.appspot.com"
+    "project_number": "237497329706",
+    "project_id": "quizapp-30ff0",
+    "storage_bucket": "quizapp-30ff0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:793665396482:android:be988e1fe82ad345b92c1b",
+        "mobilesdk_app_id": "1:237497329706:android:238ed7f7cac3c4796b7b53",
         "android_client_info": {
           "package_name": "edu.bt.emailauthapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "793665396482-hiljt8l0hjirjgfghac88aaompnsd028.apps.googleusercontent.com",
+          "client_id": "237497329706-1sooh2mr4oq518so2ghe98137s9o7c2m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyATf46pweCAQiQEpQC89hbainQg_jVfI7c"
+          "current_key": "AIzaSyCGKuu_wc1k3fENFKRfX5N8CZNmL3p_b0Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "793665396482-hiljt8l0hjirjgfghac88aaompnsd028.apps.googleusercontent.com",
+              "client_id": "237497329706-1sooh2mr4oq518so2ghe98137s9o7c2m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
