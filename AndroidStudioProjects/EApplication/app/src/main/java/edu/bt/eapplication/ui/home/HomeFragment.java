@@ -58,7 +58,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onSuccess(Void aVoid) {
                 //
-                Toast.makeText(HomeFragment.this, "Email updated successfully", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(HomeFragment.this, "Email updated successfully", Toast.LENGTH_SHORT).show();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
