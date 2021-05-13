@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewData;
     private FirebaseFirestore db =  FirebaseFirestore.getInstance();
     private DocumentReference noteRef = db.document("Notebook/My First Note");
+    private Object notebookRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,76 +56,31 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 if(documentSnapshot.exists()){
-                    String title = documentSnapshot.getString(KEY_TITLE);
-                    String description = documentSnapshot.getString(KEY_DESCRIPTION);
-
+                    Note note = documentSnapshot.toObject(Note.class);
+                    String title = note.getTitle();
+                    String description = note.getDescription();
                     textViewData.setText("Title: "+ title + " \n "+"Description:" +description  );
+                }else{
+                    textViewData.setText("");
                 }
             }
         });
     }
 
-    public void saveNote(View v) {
+    public void addNote(View v) {
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
 
-        Map<String, Object> note = new HashMap<>();
-        note.put(KEY_TITLE,title);
-        note.put(KEY_DESCRIPTION,description);
-
-        noteRef.set(note)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(MainActivity.this, "Note Saved Successfully", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(MainActivity.this, "Errors", Toast.LENGTH_SHORT).show();
-                Log.d(TAG, e.toString());
-            }
-        });
-    }
-    public void updateDescription(View v) {
-        String description  = editTextDescription.getText().toString();
 //        Map<String, Object> note = new HashMap<>();
+//        note.put(KEY_TITLE,title);
 //        note.put(KEY_DESCRIPTION,description);
-//        noteRef.set(note, SetOptions.merge());
-        noteRef.update(KEY_DESCRIPTION,description);
-    }
-    public void deleteDescription(View v){
-//        Map<String, Object> note = new HashMap<>();
-//        note.put(KEY_DESCRIPTION, FieldValue.delete());
-//        noteRef.update(note);
-        //above are one ways of doing but another ways is given below in simple
-        noteRef.update(KEY_DESCRIPTION,FieldValue.delete());
-    }
-    public void deleteNote(View v){
-        noteRef.delete();
-    }
-    public void loadNote(View v) {
-        noteRef.get()
-                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        if(documentSnapshot.exists()){
-                            String title = documentSnapshot.getString(KEY_TITLE);
-                            String description = documentSnapshot.getString(KEY_DESCRIPTION);
+        Note note  = new Note(title,description);
 
-//                            Map<String Object> note = documentSnapshot.getData()
-                            textViewData.setText("Title: "+ title + " \n "+"Description:" +description  );
-                        }else{
-                            Toast.makeText(MainActivity.this, "Document Does Not Exist", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(MainActivity.this, "Error!!!", Toast.LENGTH_SHORT).show();
-                Log.d(TAG, e.toString());
-            }
-        });
+        notebookRef.add(note);
+    }
+    public void loadNotes(View v) {
+        notebookRef.get()
+                .addOnSucc
     }
 
 
