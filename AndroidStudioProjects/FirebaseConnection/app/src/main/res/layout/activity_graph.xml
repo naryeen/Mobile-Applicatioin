@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Graph">
+
+
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="380dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:hint="X-Values" />
+
+    <TextView
+        android:id="@+id/yValue"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/xValue"
+        android:layout_alignStart="@+id/xValue"
+        android:layout_alignEnd="@+id/xValue"
+        android:layout_alignLeft="@+id/xValue"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="-8dp"
+        android:gravity="center"
+        android:ems="24"
+        android:hint="Y-Values" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Insert" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="381dp"
+        android:layout_height="494dp"
+        android:layout_below="@+id/btn_insert"
+        android:layout_marginTop="12dp">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+
+
+
+
+
+</RelativeLayout>

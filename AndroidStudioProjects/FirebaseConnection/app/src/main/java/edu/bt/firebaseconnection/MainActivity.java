@@ -76,12 +76,14 @@ public class MainActivity extends AppCompatActivity {
 //        note.put(KEY_DESCRIPTION,description);
         Note note  = new Note(title,description);
 
-        notebookRef.add(note);
+
+
+//        notebookRef.add(note);
     }
-    public void loadNotes(View v) {
-        notebookRef.get()
-                .addOnSucc
-    }
+//    public void loadNotes(View v) {
+//        notebookRef.get()
+//                .addOnSucc
+//    }
 
 
 }
