@@ -1,6 +1,7 @@
 package bt.edu.todo_18;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,14 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mRecyclerView = (RecyclerView)findViewById(R.id.recycler);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mSportsData = new ArrayList<>();
 
-        mAdapter = new SportsAdapter(this,mSportsData);
+        mAdapter = new SportsAdapter(this, mSportsData);
         mRecyclerView.setAdapter(mAdapter);
 
         initializeData();
+
     }
 
     private void initializeData() {
@@ -36,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         mSportsData.clear();
 
-        for(int i=0; i<sportsList.length;i++){
-            mSportsData.add(new Sports(sportsList[i],sportsInfo[i],sportsImageResources.getResourceId(i,0)));
+        for (int i = 0; i < sportsList.length; i++) {
+            mSportsData.add(new Sports(sportsList[i], sportsInfo[i], sportsImageResources.getResourceId(i, 0)));
         }
         mAdapter.notifyDataSetChanged();
         sportsImageResources.recycle();

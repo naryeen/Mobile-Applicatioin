@@ -5,7 +5,7 @@ public class Sports {
     private String info;
     private final int imageResource;
 
-    Sports(String title,String info,int imageResource){
+    Sports(String title,String info, int imageResource){
         this.title = title;
         this.info = info;
         this.imageResource = imageResource;

@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,6 +20,7 @@ public class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder
     SportsAdapter( Context context, ArrayList<Sports> sportsData){
         this.mSportsData = sportsData;
         this.mContext = context;
+        //Constructor
     }
 
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f72d8071-b640-42dc-9d62-b426c0c6a2d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyclassActivity/.idea/MyclassActivity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/ic_launcher-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/HomeFragmenet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/expenseCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/calender.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/graph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/register.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_add_task_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_calculate_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_email_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_categoryicon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_done.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_expense.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_logout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout-v21/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_calculator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_expense_category.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/fragment_expense.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/nav_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/values-v21/style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TODO72/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1shBuThdqQKTSpBnawl71E2nD68" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QuizApp" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f72d8071-b640-42dc-9d62-b426c0c6a2d3" name="Default Changelist" comment="" />
+      <created>1621315163357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621315163357</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1621323153363">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1621323153363" />
+  </component>
+</project>

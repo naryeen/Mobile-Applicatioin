@@ -17,6 +17,7 @@
         <TextView
             android:id="@+id/text_home"
             android:layout_width="match_parent"
+            android:paddingRight="5dp"
             android:layout_height="75dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnaia" />
