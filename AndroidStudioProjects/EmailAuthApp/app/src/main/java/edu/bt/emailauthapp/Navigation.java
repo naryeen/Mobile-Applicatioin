@@ -1,23 +1,20 @@
 package edu.bt.emailauthapp;
 
-import android.os.Bundle;
-import android.view.View;
-import android.view.Menu;
-import android.view.Menu;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import android.os.Bundle;
+import android.view.MenuItem;
+import com.google.android.material.navigation.NavigationView;
+import edu.bt.emailauthapp.ui.gallery.GalleryFragment;
+import edu.bt.emailauthapp.ui.home.HomeFragment;
+import edu.bt.emailauthapp.ui.slideshow.SlideshowFragment;
 
-public class Navigation extends AppCompatActivity {
-
-    private AppBarConfiguration mAppBarConfiguration;
+public class Navigation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,38 +22,67 @@ public class Navigation extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+
+        drawer = findViewById(R.id.drawer_layout);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
-                .setDrawerLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
+                    new HomeFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_home);
+        }
+
     }
 
+
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigation, menu);
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.nav_home:
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
+                        new HomeFragment()).commit();
+                break;
+            case R.id.nav_gallery:
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
+                        new GalleryFragment()).commit();
+                break;
+            case R.id.nav_slideshow:
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
+                        new SlideshowFragment()).commit();
+                break;
+//            case R.id.nav_quiz:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
+//                        new QuizFragment()).commit();
+//                break;
+//            case R.id.nav_event:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
+//                        new EventFragment()).commit();
+//                break;
+//            case R.id.nav_share:
+//                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.nav_about:
+//                Toast.makeText(this, "About", Toast.LENGTH_SHORT).show();
+//                break;
+        }
+        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
     @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.isDrawerOpen(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
+
 }

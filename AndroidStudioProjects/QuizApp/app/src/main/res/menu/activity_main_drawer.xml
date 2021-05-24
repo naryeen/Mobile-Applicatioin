@@ -11,15 +11,19 @@
         <item
             android:id="@+id/nav_user"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="User" />
+            android:title="@string/menu_user" />
         <item
             android:id="@+id/nav_quiz"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Quiz" />
+            android:title="@string/menu_quiz" />
+        <item
+            android:id="@+id/nav_python"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_python" />
         <item
             android:id="@+id/nav_event"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Python" />
+            android:title="@string/menu_event" />
     </group>
     <item android:title = "Others">
         <menu>

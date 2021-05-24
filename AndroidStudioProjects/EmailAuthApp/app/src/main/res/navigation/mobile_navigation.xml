@@ -14,12 +14,11 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="edu.bt.emailauthapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="Gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="edu.bt.emailauthapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="Slideshow"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

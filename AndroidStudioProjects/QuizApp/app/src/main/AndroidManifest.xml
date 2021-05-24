@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
-        <activity android:name=".ResetPassword"></activity>
+        <activity android:name=".ResetPassword" />
         <activity android:name=".Registration" />
         <activity
             android:name=".LoginActivity"

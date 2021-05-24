@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Python">
+    tools:context=".ui.Python.HomePython">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
-</androidx.core.widget.NestedScrollView>
+        android:id="@+id/text_python"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Helo, welcome to Python lesson"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-281dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

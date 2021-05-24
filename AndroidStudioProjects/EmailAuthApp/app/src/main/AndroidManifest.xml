@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.bt.emailauthapp" >
+    package="edu.bt.emailauthapp">
 
     <application
         android:allowBackup="true"
+        android:exported="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EmailAuthApp" >
+        android:theme="@style/Theme.EmailAuthApp">
         <activity
             android:name=".Navigation"
             android:label="@string/title_activity_navigation"
-            android:theme="@style/Theme.EmailAuthApp.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.EmailAuthApp.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.parent" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter></activity>
+
         <activity android:name=".ExpenseDetails" />
         <activity android:name=".Chart_Graph" />
         <activity android:name=".ResetPassword" />
@@ -24,21 +29,17 @@
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
-            android:theme="@style/Theme.EmailAuthApp.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:theme="@style/Theme.EmailAuthApp.NoActionBar">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
-        <activity android:name=".MainActivity" >
-
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-
-
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
+        <activity android:name=".MainActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

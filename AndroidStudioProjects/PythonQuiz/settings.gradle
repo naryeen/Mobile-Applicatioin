@@ -1,0 +1,2 @@
+rootProject.name = "PythonQuiz"
+include ':app'

@@ -18,8 +18,8 @@ public class User extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_quiz, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
+        View root = inflater.inflate(R.layout.fragment_user, container, false);
+        final TextView textView = root.findViewById(R.id.text_user);
 
         return root;
     }

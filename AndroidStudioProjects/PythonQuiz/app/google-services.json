@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "652714355024",
+    "project_id": "pythonquiz-78c7b",
+    "storage_bucket": "pythonquiz-78c7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652714355024:android:f0eac56bfab34c6f226455",
+        "android_client_info": {
+          "package_name": "edu.bt.pythonquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652714355024-ecav39gil1duelpiurv452aehkkvffge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfQmhxe0ol3OchbZMTRgAx71eur4-ZLOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652714355024-ecav39gil1duelpiurv452aehkkvffge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

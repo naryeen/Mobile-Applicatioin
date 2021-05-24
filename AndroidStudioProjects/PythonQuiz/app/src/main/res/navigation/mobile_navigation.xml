@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="edu.bt.pythonquiz.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_python"
+            app:destination="@id/nav_python" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_event"
+            app:destination="@id/nav_event" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_quiz"
+            app:destination="@id/nav_quiz" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="edu.bt.pythonquiz.ui.python.PythonFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_python" />
+
+    <fragment
+        android:id="@+id/nav_python"
+        android:name="edu.bt.pythonquiz.ui.profile.ProfileFragment"
+        android:label="@string/menu_python"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="edu.bt.pythonquiz.ui.quiz.QuizFragment"
+        android:label="@string/menu_quiz"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="edu.bt.pythonquiz.ui.event.EventFragment"
+        android:label="@string/menu_event"
+        tools:layout="@layout/fragment_event" />
+
+</navigation>
