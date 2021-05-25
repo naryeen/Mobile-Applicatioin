@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
     tools:showIn="@layout/app_bar_main">
 
 <!--    <fragment-->
@@ -20,10 +21,10 @@
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        app:navGraph="@navigation/mobile_navigation" -->
 <!--        />-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
 
 <!--        <androidx.appcompat.widget.Toolbar-->
 <!--            android:layout_width="match_parent"-->
@@ -45,7 +46,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:defaultNavHost="true"
             app:navGraph="@navigation/mobile_navigation"/>
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

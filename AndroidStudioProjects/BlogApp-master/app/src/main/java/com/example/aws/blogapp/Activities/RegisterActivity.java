@@ -33,16 +33,15 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     ImageView ImgUserPhoto;
-    static int PReqCode = 1 ;
-    static int REQUESCODE = 1 ;
-    Uri pickedImgUri ;
+    static int PReqCode = 1;
+    static int REQUESCODE = 1;
+    Uri pickedImgUri;
 
-    private EditText userEmail,userPassword,userPAssword2,userName;
+    private EditText userEmail, userPassword, userPAssword2, userName;
     private ProgressBar loadingProgress;
     private Button regBtn;
 
     private FirebaseAuth mAuth;
-
 
 
     @Override
@@ -74,36 +73,28 @@ public class RegisterActivity extends AppCompatActivity {
                 final String password2 = userPAssword2.getText().toString();
                 final String name = userName.getText().toString();
 
-                if( email.isEmpty() || name.isEmpty() || password.isEmpty()  || !password.equals(password2)) {
+                if (email.isEmpty() || name.isEmpty() || password.isEmpty() || !password.equals(password2)) {
 
 
                     // something goes wrong : all fields must be filled
                     // we need to display an error message
-                    showMessage("Please Verify all fields") ;
+                    showMessage("Please Verify all fields");
                     regBtn.setVisibility(View.VISIBLE);
                     loadingProgress.setVisibility(View.INVISIBLE);
 
 
-                }
-                else {
+                } else {
                     // everything is ok and all fields are filled now we can start creating user account
                     // CreateUserAccount method will try to create the user if the email is valid
 
-                    CreateUserAccount(email,name,password);
+                    CreateUserAccount(email, name, password);
                 }
-
-
-
-
-
-
-
 
 
             }
         });
 
-        ImgUserPhoto = findViewById(R.id.regUserPhoto) ;
+        ImgUserPhoto = findViewById(R.id.regUserPhoto);
 
         ImgUserPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,14 +105,9 @@ public class RegisterActivity extends AppCompatActivity {
                     checkAndRequestForPermission();
 
 
-                }
-                else
-                {
+                } else {
                     openGallery();
                 }
-
-
-
 
 
             }
@@ -135,7 +121,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         // this method create user account with specific email and password
 
-        mAuth.createUserWithEmailAndPassword(email,password)
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -144,13 +130,10 @@ public class RegisterActivity extends AppCompatActivity {
                             // user account created successfully
                             showMessage("Account created");
                             // after we created user account we need to update his profile picture and name
-                            updateUserInfo( name ,pickedImgUri,mAuth.getCurrentUser());
+                            updateUserInfo(name, pickedImgUri, mAuth.getCurrentUser());
 
 
-
-                        }
-                        else
-                        {
+                        } else {
 
                             // account creation failed
                             showMessage("account creation failed" + task.getException().getMessage());
@@ -160,12 +143,6 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 });
-
-
-
-
-
-
 
 
     }
@@ -216,22 +193,15 @@ public class RegisterActivity extends AppCompatActivity {
                 });
 
 
-
-
-
             }
         });
-
-
-
-
 
 
     }
 
     private void updateUI() {
 
-        Intent homeActivity = new Intent(getApplicationContext(),Home.class);
+        Intent homeActivity = new Intent(getApplicationContext(), Home.class);
         startActivity(homeActivity);
         finish();
 
@@ -241,7 +211,7 @@ public class RegisterActivity extends AppCompatActivity {
     // simple method to show toast message
     private void showMessage(String message) {
 
-        Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
 
     }
 
@@ -250,7 +220,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         Intent galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
         galleryIntent.setType("image/*");
-        startActivityForResult(galleryIntent,REQUESCODE);
+        startActivityForResult(galleryIntent, REQUESCODE);
     }
 
     private void checkAndRequestForPermission() {
@@ -260,19 +230,15 @@ public class RegisterActivity extends AppCompatActivity {
                 != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(RegisterActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)) {
 
-                Toast.makeText(RegisterActivity.this,"Please accept for required permission",Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this, "Please accept for required permission", Toast.LENGTH_SHORT).show();
 
-            }
-
-            else
-            {
+            } else {
                 ActivityCompat.requestPermissions(RegisterActivity.this,
-                                                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                                                    PReqCode);
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                        PReqCode);
             }
 
-        }
-        else
+        } else
             openGallery();
 
     }
@@ -282,11 +248,11 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (resultCode == RESULT_OK && requestCode == REQUESCODE && data != null ) {
+        if (resultCode == RESULT_OK && requestCode == REQUESCODE && data != null) {
 
             // the user has successfully picked an image
             // we need to save its reference to a Uri variable
-            pickedImgUri = data.getData() ;
+            pickedImgUri = data.getData();
             ImgUserPhoto.setImageURI(pickedImgUri);
 
 

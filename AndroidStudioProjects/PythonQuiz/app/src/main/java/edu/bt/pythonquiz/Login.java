@@ -107,7 +107,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         //if the login is successful the user will send to the home.
-                        startActivity(new Intent(getApplicationContext(),HomeFragment.class));
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

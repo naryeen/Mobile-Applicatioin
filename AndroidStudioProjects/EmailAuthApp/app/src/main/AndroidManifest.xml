@@ -15,7 +15,7 @@
             android:label="@string/title_activity_navigation"
             android:theme="@style/Theme.EmailAuthApp.NoActionBar">
         <intent-filter>
-            <action android:name="android.intent.action.parent" />
+            <action android:name="android.intent.action.Se" />
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter></activity>
 

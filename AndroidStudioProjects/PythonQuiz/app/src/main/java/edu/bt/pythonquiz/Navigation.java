@@ -39,9 +39,9 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.nav_home,
+            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
                     new HomeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
+            navigationView.setCheckedItem(R.id.nav_host_fragment);
         }
 
     }
@@ -51,29 +51,29 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_home,
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
                         new HomeFragment()).commit();
                 break;
             case R.id.nav_profile:
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_home,
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
                         new ProfileFragment()).commit();
                 break;
             case R.id.nav_python:
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_home,
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
                         new PythonFragment()).commit();
                 break;
             case R.id.nav_quiz:
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_home,
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
                         new QuizFragment()).commit();
                 break;
             case R.id.nav_event:
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_home,
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,
                         new EventFragment()).commit();
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.nav_about:
+            case R.id.nav_logout:
                 Toast.makeText(this, "About", Toast.LENGTH_SHORT).show();
                 break;
         }

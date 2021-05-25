@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="837ee8c8-ebdc-4c04-8008-dd467412430f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BlogApp-master/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication/.idea/MyApplication.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyclassActivity/.idea/MyclassActivity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_about.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_event.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_python.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_quiz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable-v24/ic_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PythonQuiz/app/src/main/res/drawable/google.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/ic_launcher-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/HomeFragmenet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/expenseCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/java/edu/bt/signinandout/register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/calender.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/graph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable-v24/register.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_add_task_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_calculate_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_baseline_email_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_categoryicon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_done.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_expense.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_logout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/drawable/ic_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout-v21/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_calculator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_expense_category.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/fragment_expense.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/layout/nav_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Signinandout/app/src/main/res/values-v21/style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TODO72/.idea/TODO72.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TODO72/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TODO_18/.idea/TODO_18.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/home/nar-bdr-kharka/.android/avd/Pixel_3a_API_30_x86.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="valueResourceFile" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1sT72yhql9XcPOLSRU7nr7zEFlT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TODO4" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.bt.todo17" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Instrumented Tests.InstrumentalTestPlus...">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="TODO17.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstrumentalTestPlus..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="TODO17.app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="edu.bt.todo17.InstrumentalTestPlusAndMinus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainActivityTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="TODO17.app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="edu.bt.todo17.MainActivityTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.InstrumentalTestPlus..." />
+        <item itemvalue="Android Instrumented Tests.MainActivityTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="837ee8c8-ebdc-4c04-8008-dd467412430f" name="Default Changelist" comment="" />
+      <created>1620884522531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620884522531</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="515" y="287" width="952" height="539" key="#PSD" timestamp="1621851715593">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="515" y="287" width="952" height="539" key="#PSD/72.27.1848.1053@72.27.1848.1053" timestamp="1621851715593" />
+    <state x="753" y="468" width="476" height="178" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog" timestamp="1621850654965">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="753" y="468" width="476" height="178" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1621850654965" />
+    <state x="803" y="260" width="811" height="594" key="#com.intellij.ide.util.MemberChooser" timestamp="1620889309441">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="803" y="260" width="811" height="594" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1620889309441" />
+    <state x="578" y="310" width="826" height="493" key="AndroidCreateResourceFileDialog" timestamp="1620888973877">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="578" y="310" width="826" height="493" key="AndroidCreateResourceFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1620888973877" />
+    <state x="811" y="344" width="359" height="425" key="AndroidCreateXmlResourceDialog" timestamp="1620887250388">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="811" y="344" width="359" height="425" key="AndroidCreateXmlResourceDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1620887250388" />
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1621849400890">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1621849400890" />
+    <state width="1800" height="275" key="GridCell.Tab.0.bottom" timestamp="1621851717674">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717674" />
+    <state width="1800" height="275" key="GridCell.Tab.0.center" timestamp="1621851717673">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717673" />
+    <state width="1800" height="275" key="GridCell.Tab.0.left" timestamp="1621851717673">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717673" />
+    <state width="1800" height="275" key="GridCell.Tab.0.right" timestamp="1621851717673">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717673" />
+    <state width="1800" height="275" key="GridCell.Tab.1.bottom" timestamp="1621851717666">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717666" />
+    <state width="1800" height="275" key="GridCell.Tab.1.center" timestamp="1621851717666">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717666" />
+    <state width="1800" height="275" key="GridCell.Tab.1.left" timestamp="1621851717666">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717666" />
+    <state width="1800" height="275" key="GridCell.Tab.1.right" timestamp="1621851717666">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="275" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1621851717666" />
+  </component>
+</project>

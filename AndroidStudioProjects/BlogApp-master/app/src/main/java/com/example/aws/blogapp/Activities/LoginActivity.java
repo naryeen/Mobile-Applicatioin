@@ -74,18 +74,10 @@ public class LoginActivity extends AppCompatActivity {
                 {
                     signIn(mail,password);
                 }
-
-
-
-
             }
         });
-
-
     }
-
     private void signIn(String mail, String password) {
-
 
         mAuth.signInWithEmailAndPassword(mail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -104,28 +96,19 @@ public class LoginActivity extends AppCompatActivity {
                     btnLogin.setVisibility(View.VISIBLE);
                     loginProgress.setVisibility(View.INVISIBLE);
                 }
-
-
             }
         });
-
-
-
     }
-
     private void updateUI() {
 
         startActivity(HomeActivity);
         finish();
 
     }
-
     private void showMessage(String text) {
 
         Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
     }
-
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -134,10 +117,6 @@ public class LoginActivity extends AppCompatActivity {
         if(user != null) {
             //user is already connected  so we need to redirect him to home page
             updateUI();
-
         }
-
-
-
     }
 }
