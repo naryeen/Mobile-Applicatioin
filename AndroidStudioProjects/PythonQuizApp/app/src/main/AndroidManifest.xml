@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PythonQuizApp">
-        <activity android:name=".SetsActivity"></activity>
-        <activity android:name=".CategoryActivity" />
+        <activity android:name=".ScoreActivity" ></activity>
+        <activity android:name=".QuestionActivity"  />
+        <activity android:name=".SetsActivity" android:theme="@style/Theme.PythonQuizApp.NoActionBar" />
+        <activity android:name=".CategoryActivity"  />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

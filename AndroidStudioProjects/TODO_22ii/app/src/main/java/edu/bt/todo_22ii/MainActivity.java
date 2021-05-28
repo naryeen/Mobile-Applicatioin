@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             Bundle queryBundle = new Bundle();
             queryBundle.putString("queryString", queryString);
             getSupportLoaderManager().restartLoader(0, queryBundle, this);
-
             nauthorText.setText("");
             ntitleText.setText(R.string.loading);
         }
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @NonNull
     @NotNull
     @Override
-    public Loader<String> onCreateLoader(int id, @Nullable @org.jetbrains.annotations.Nullable Bundle args) {
+    public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {
         String queryString = "";
 
         if (args != null) {

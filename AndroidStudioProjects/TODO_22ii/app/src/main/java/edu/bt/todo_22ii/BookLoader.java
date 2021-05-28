@@ -1,7 +1,6 @@
 package edu.bt.todo_22ii;
 
 import android.content.Context;
-
 import androidx.annotation.Nullable;
 import androidx.loader.content.AsyncTaskLoader;
 
