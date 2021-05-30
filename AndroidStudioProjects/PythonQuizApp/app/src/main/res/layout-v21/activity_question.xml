@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/quest_num"
+            android:id="@+id/qCount"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -42,7 +42,6 @@
     </LinearLayout>
 
     <LinearLayout
-
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -65,10 +64,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/round_corner"
-            android:backgroundTint="#E99C03"
-            android:elevation="3dp"
-            android:padding="16dp"
+            android:gravity="center"
             android:text="option1"
+            android:backgroundTint="@color/colorAccent"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -79,10 +77,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/round_corner"
-            android:backgroundTint="#E99C03"
-            android:elevation="3dp"
-            android:padding="16dp"
-            android:text="option 2"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:text="option2"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -93,11 +90,13 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/round_corner"
-            android:elevation="3dp"
-            android:padding="16dp"
-            android:text="option 3 "
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="option3"
+
             android:textColor="@color/white"
             android:textSize="17sp"
+
             android:textStyle="bold" />
 
         <Button
@@ -106,30 +105,34 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/round_corner"
-            android:backgroundTint="#E99C03"
-            android:elevation="3dp"
-            android:padding="16dp"
-            android:text="option 4 "
+            android:gravity="center"
+            android:text="option4"
+            android:backgroundTint="@color/colorAccent"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold" />
 
+
     </LinearLayout>
 
     <TextView
-        android:id="@+id/count_down"
+        android:id="@+id/timerQues"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginStart="341dp"
+        android:layout_marginLeft="341dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
         android:text="10"
-        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:background="@drawable/round_corner"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="16dp" />
 
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,13 +39,10 @@ public class SetsAdapter extends BaseAdapter {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.set_item_layout,parent,false);
         }else{
             view =convertView;
-        }
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(parent.getContext(),QuestionActivity.class);
-                parent.getContext().startActivity(intent);
-            }
+        }//TODO::when user click the view ,user'll have to go to questioins activity
+        view.setOnClickListener(v -> {
+            Intent intent = new Intent(parent.getContext(),QuestionActivity.class);
+            parent.getContext().startActivity(intent);
         });
         ((TextView) view.findViewById(R.id.setNo_tv)).setText(String.valueOf(position+1));
         return view;

@@ -11,7 +11,8 @@
         android:id="@+id/sets_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -20,9 +21,15 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="Sets"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="Sets"/>
         <GridView
             android:id="@+id/sets_gridView"
             android:layout_width="match_parent"
