@@ -1,5 +1,6 @@
 package edu.bt.pythonquizapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
@@ -10,12 +11,24 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static java.lang.Thread.sleep;
 
 public class SplashActivity extends AppCompatActivity {
     private TextView textViewSplash;
     private ImageView imageViewSplash;
+    public static List<String> lessList = new ArrayList<>();
+    private FirebaseFirestore firestore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,23 +36,59 @@ public class SplashActivity extends AppCompatActivity {
         textViewSplash = findViewById(R.id.textViewSplash);
         imageViewSplash = findViewById(R.id.imageViewSplash);
 
-        Typeface typeface = ResourcesCompat.getFont(this,R.font.blacklist);
+        Typeface typeface = ResourcesCompat.getFont(this, R.font.blacklist);
         textViewSplash.setTypeface(typeface);
-        Animation ani = AnimationUtils.loadAnimation(this,R.anim.myanimation);
+        Animation ani = AnimationUtils.loadAnimation(this, R.anim.myanimation);
         textViewSplash.setAnimation(ani);
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    sleep(3000);
+        firestore = FirebaseFirestore.getInstance();
 
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
+        //calling the thread and fetching the data and immediately directing to main activity, need to  change the fetvhing style
+        //calling methods , main methods
+        new Thread(() -> {
+
+            //we dont need time to sleep because we want to fetch the data from the server that takes time , so simply calling methids
+            //sleep(3000);
+            loadData();
+
+
         }).start();
+    }
+
+    private void loadData() {
+        //clear Lessons or category list
+        lessList.clear();
+        //directly connects to firebase , with collections in firebase
+        firestore.collection("QUIZ").document("Lessons")
+                .get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot doc = task.getResult();
+                    if (doc.exists()) {
+                        //fetch the lesson list here
+                        //how many lessons are there
+                        long count = (long) doc.get("COUNT");
+                        for (int i = 1; i <= count; i++) {
+                            String lessonName = doc.getString("LESSON" + String.valueOf(i));
+                            lessList.add(lessonName);
+                        }
+//After fetching thee lessons  then only directing to main activity
+                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                        startActivity(intent);
+                    } else {
+                        //no no document on the server
+                        Toast.makeText(SplashActivity.this, "No Lesson Document Exists", Toast.LENGTH_SHORT).show();
+                        //TODO neww changes
+                        finish();
+                    }
+                    SplashActivity.this.finish();
+                } else {
+                    Toast.makeText(SplashActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
     }
 }
