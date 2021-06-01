@@ -12,9 +12,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     // Current count
-    private int mCount = 0;
+    private int nCount = 0;
     // Current background color
-    private int mColor;
+    private int nColor;
     // Text view to display both count and color
     private TextView mShowCountTextView;
 
@@ -38,39 +38,39 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize views, color, preferences
         mShowCountTextView = findViewById(R.id.count_textview);
-        mColor = ContextCompat.getColor(this,
+        nColor = ContextCompat.getColor(this,
                 R.color.default_background);
 
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
 
         // Restore preferences
-        mCount = mPreferences.getInt(COUNT_KEY, 0);
-        mShowCountTextView.setText(String.format("%s", mCount));
-        mColor = mPreferences.getInt(COLOR_KEY, mColor);
-        mShowCountTextView.setBackgroundColor(mColor);
+        nCount = mPreferences.getInt(COUNT_KEY, 0);
+        mShowCountTextView.setText(String.format("%s", nCount));
+        nColor = mPreferences.getInt(COLOR_KEY, nColor);
+        mShowCountTextView.setBackgroundColor(nColor);
     }
     public void changeBackground(View view) {
         int color = ((ColorDrawable) view.getBackground()).getColor();
         mShowCountTextView.setBackgroundColor(color);
-        mColor = color;
+        nColor = color;
     }
 
 
     public void countUp(View view) {
-        mCount++;
-        mShowCountTextView.setText(String.format("%s", mCount));
+        nCount++;
+        mShowCountTextView.setText(String.format("%s", nCount));
     }
 
 
     public void reset(View view) {
         // Reset count
-        mCount = 0;
-        mShowCountTextView.setText(String.format("%s", mCount));
+        nCount = 0;
+        mShowCountTextView.setText(String.format("%s", nCount));
 
         // Reset color
-        mColor = ContextCompat.getColor(this,
+        nColor = ContextCompat.getColor(this,
                 R.color.default_background);
-        mShowCountTextView.setBackgroundColor(mColor);
+        mShowCountTextView.setBackgroundColor(nColor);
 
         // Clear preferences
         SharedPreferences.Editor preferencesEditor = mPreferences.edit();
@@ -82,9 +82,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
-        SharedPreferences.Editor preferencesEditor = mPreferences.edit();
-        preferencesEditor.putInt(COUNT_KEY, mCount);
-        preferencesEditor.putInt(COLOR_KEY, mColor);
+        SharedPreferences.Editor preferencesEditor = mPreferences.edit(); //to edit the files
+        preferencesEditor.putInt(COUNT_KEY, nCount);
+        preferencesEditor.putInt(COLOR_KEY, nColor);
         preferencesEditor.apply();
     }
 }
